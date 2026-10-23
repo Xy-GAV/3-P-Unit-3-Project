@@ -1,0 +1,86 @@
+.carousel{
+    width:100%;
+    overflow-x: auto;
+    margin: 3em auto;
+    display:flex;
+    gap: 1em;
+    scroll-behavior: smooth !important;
+}
+
+.carousel::-webkit-scrollbar{
+    display:none
+}
+
+.carousel::scroll-button(right){
+    content:'forth';
+    border:none;
+    background-color:black;
+    color:white;
+
+}
+
+.carousel::scroll-button(left){
+    content:'back';
+    border:none;
+    background-color:black;
+    color:white;
+
+}
+
+/*--------------- Page Settings------------*/
+
+.longpage{
+    flex: 0 0 1100px;
+    height: 80vh;
+    background-color: gray;
+    padding: 1em;
+    border-radius: .5em;
+    text-align:center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.page{
+    flex: 0 0 550px;
+    height: 80vh;
+    background-color: gray;
+    padding: 1em;
+    border-radius: .5em;
+    text-align:center;
+    align-content: center;
+}
+
+/*--------------- Text Settings------------*/
+
+td{
+    font-size: medium;
+}
+.page div{
+    font-size: medium
+}
+
+
+
+table { border-collapse: collapse; }
+table tr :first-child{ border-left:none }
+tr { border: none; }
+td {
+  border-right: none; 
+  border-left: solid 1px black;
+}
+
+.longpage:not(.dyslexia-mode) {
+    font-family: "Oooh Baby", cursive;
+}
+.dyslexia-mode .longpage{
+    font-family: "Mynerve", cursive;
+}
+
+.page:not(.dyslexia-mode) {
+    font-family: "Oooh Baby", cursive;
+}
+.dyslexia-mode .page{
+    font-family: "Mynerve", cursive;
+}
