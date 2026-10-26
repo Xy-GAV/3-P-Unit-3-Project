@@ -1,6 +1,12 @@
+*,html{
+    scroll-behavior: smooth !important;
+}
+body{
+    background-color: rgb(18, 18, 32);
+}
 .carousel{
     width:100%;
-    overflow-x: auto;
+    overflow-x:auto;
     margin: 3em auto;
     display:flex;
     gap: 1em;
@@ -32,35 +38,43 @@
 .longpage{
     flex: 0 0 1100px;
     height: 80vh;
-    background-color: gray;
+    background-color: rgb(191, 192, 175);
     padding: 1em;
     border-radius: .5em;
-    text-align:center;
+    text-align:justify;
     align-content: center;
     display: flex;
     justify-content: center;
     align-items: center; 
 }
 
+.longpage td{
+    table-layout: fixed;
+    width:530px;
+    line-height:1.5em;
+}
+
+td{
+    padding-left:30px;
+    padding-right:20px
+}
+
 .page{
     flex: 0 0 550px;
     height: 80vh;
-    background-color: gray;
+    background-color: rgb(191, 192, 175);
     padding: 1em;
     border-radius: .5em;
-    text-align:center;
-    align-content: center;
+    text-align:justify;
+    align-content:baseline;
 }
+.page p{
+    padding:10px;
+    line-height:1.5em;
+}
+
 
 /*--------------- Text Settings------------*/
-
-td{
-    font-size: medium;
-}
-.page div{
-    font-size: medium
-}
-
 
 
 table { border-collapse: collapse; }
@@ -73,14 +87,22 @@ td {
 
 .longpage:not(.dyslexia-mode) {
     font-family: "Oooh Baby", cursive;
+    font-size: large;
 }
 .dyslexia-mode .longpage{
     font-family: "Mynerve", cursive;
+    font-size: medium;
 }
 
 .page:not(.dyslexia-mode) {
     font-family: "Oooh Baby", cursive;
+    font-size: large;
 }
 .dyslexia-mode .page{
     font-family: "Mynerve", cursive;
+    font-size: medium;
+}
+
+.hidetext{
+    color: rgba(1,1,1,0);
 }
