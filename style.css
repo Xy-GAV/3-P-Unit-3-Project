@@ -1,8 +1,9 @@
 *,html{
     scroll-behavior: smooth !important;
 }
+
 body{
-    background-color: rgb(18, 18, 32);
+   background: linear-gradient(360deg,rgba(0, 0, 0, 1) 0%, rgba(38, 48, 59, 1) 50%, rgb(55, 47, 56) 100%);
 }
 .carousel{
     width:100%;
@@ -106,3 +107,5 @@ td {
 .hidetext{
     color: rgba(1,1,1,0);
 }
+
+/*--------------- Cursor Settings------------*/
