@@ -108,4 +108,24 @@ td {
     color: rgba(1,1,1,0);
 }
 
-/*--------------- Cursor Settings------------*/
+/*--------------- Dropdout Settings------------*/
+
+.goldbtn{
+    font-size: x-large;
+    padding: 40px;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    padding: 14px 28px;
+    font-family: "Aboreto", system-ui;
+    text-transform: uppercase;
+  color: #3b2a06;
+  background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 10px 24px -10px rgba(179, 135, 40, .6999999999999999555910790149937383830547332763671875), inset 0 1px 0 0 rgba(255, 255, 255, .5);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 200ms cubic-bezier(.2,.8,.2,1), box-shadow 200ms cubic-bezier(.2,.8,.2,1), filter 200ms cubic-bezier(.2,.8,.2,1);
+}
