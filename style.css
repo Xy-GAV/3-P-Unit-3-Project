@@ -78,8 +78,8 @@ td{
 /*--------------- Text Settings------------*/
 
 
-table { border-collapse: collapse; }
-table tr :first-child{ border-left:none }
+.table { border-collapse: collapse; }
+.table tr :first-child{ border-left:none }
 tr { border: none; }
 td {
   border-right: none; 
@@ -111,9 +111,9 @@ td {
 /*--------------- Dropdout Settings------------*/
 
 .goldbtn{
+    width: 5vw;
+    height:10vh;
     font-size: x-large;
-    padding: 40px;
-    padding-bottom: 20px;
     align-items: center;
     justify-content: center;
     gap: .5em;
@@ -128,4 +128,27 @@ td {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   transition: transform 200ms cubic-bezier(.2,.8,.2,1), box-shadow 200ms cubic-bezier(.2,.8,.2,1), filter 200ms cubic-bezier(.2,.8,.2,1);
+}
+
+.managertbl table td tr{
+    border-collapse: collapse;
+    border-color: none;
+}
+
+.managertbl td{
+    padding:20px;
+}
+
+.managertbl{
+    align-content: baseline;
+    justify-content: center;
+}
+
+h1{
+    color: white;
+    font-family: "Aboreto", system-ui;
+    font-size: 10em;
+    text-align: center;
+    justify-content: center;
+    align-content: baseline;
 }
